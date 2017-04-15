@@ -20,10 +20,17 @@ public class MergeFrag extends Fragment {
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
+#ifdef NEW
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+    }
+#else /* not NEW */
     @Override
     public void onStart() {
         super.onStart();
         Log.i("TAG","logging");
     }
+#endif /* not NEW */
 }
 
