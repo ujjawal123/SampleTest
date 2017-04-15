@@ -44,17 +44,20 @@ public class FirstFragment extends Fragment {
 
     }
 
-    private void getFormatted(){
 
+    private void getFormatted(){
     }
 
-    private void setValue(TextView vview,String value){
 
+    private void onTest(String test) {
+    }
+
+
+    private void setValue(TextView vview,String value){
         vview.setText(String.valueOf(value));
         Log.i("TAG","executing");
     }
 
     private void delete(){
-
     }
 }
