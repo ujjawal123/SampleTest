@@ -34,15 +34,15 @@ public class FirstFragment extends Fragment {
 
     }
 
-    private void setValue(TextView vview){
-
+    private void setValue(TextView vview,String value){
+        vview.setText(value);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         TextView textView= (TextView) view.findViewById(R.id.title);
-        setValue(textView);
+        setValue(textView,"hi there");
 
     }
 }
