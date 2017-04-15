@@ -35,4 +35,9 @@ Fragment fragment;
     protected void onResume() {
         super.onResume();
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
 }
