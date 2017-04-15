@@ -30,14 +30,10 @@ public class FirstFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
         return inflater.inflate(R.layout.first_fragment, null);
-
     }
+    private void test(){
 
-    private void setValue(TextView vview,String value){
-        vview.setText(value);
-        Log.i("TAG","executing");
     }
 
     @Override
@@ -46,5 +42,10 @@ public class FirstFragment extends Fragment {
         TextView textView= (TextView) view.findViewById(R.id.title);
         setValue(textView,"hi there");
 
+    }
+
+    private void setValue(TextView vview,String value){
+        vview.setText(value);
+        Log.i("TAG","executing");
     }
 }
