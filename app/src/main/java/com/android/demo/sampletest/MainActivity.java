@@ -30,4 +30,9 @@ Fragment fragment;
         fragmentTransaction.commit();
         frg_test.setVisibility(v.GONE);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 }
