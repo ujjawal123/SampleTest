@@ -19,6 +19,7 @@ public class FirstFragment extends Fragment {
 
         Bundle args = new Bundle();
         args.putString("dob","25,May");
+        args.putString("ars","asdfd");
         FirstFragment fragment = new FirstFragment();
         fragment.setArguments(args);
         return fragment;
