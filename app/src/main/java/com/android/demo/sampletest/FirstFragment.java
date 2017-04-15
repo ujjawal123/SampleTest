@@ -15,10 +15,10 @@ import android.view.ViewGroup;
 public class FirstFragment extends Fragment {
 
 
-    public static FirstFragment newInstance() {
+    public static FirstFragment newInstance(String data) {
 
         Bundle args = new Bundle();
-
+        args.putString("title", data);
         FirstFragment fragment = new FirstFragment();
         fragment.setArguments(args);
         return fragment;
@@ -27,7 +27,7 @@ public class FirstFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.first_fragment,null);
+        return inflater.inflate(R.layout.first_fragment, null);
 
     }
 
